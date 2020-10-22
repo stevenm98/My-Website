@@ -1,5 +1,6 @@
 @import 'config';
 @import 'menu';
+@import 'mobile';
 * {
   box-sizing: border-box;
 }
@@ -23,7 +24,7 @@ h1, h2, h3 {
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color,2), 0.5);
+    // background: rgba(lighten($primary-color,2), 0.5);
   }
 }
 a {
@@ -54,7 +55,7 @@ main {
   &#home {
     overflow: hidden;
     h1 {
-      margin-top: 20vh;
+      margin-top: 100px;
     }
   }
 }
