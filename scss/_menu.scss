@@ -9,10 +9,10 @@
   @include easeOut;
 
   .btn-line {
-    width: 32px;
+    width: 30px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
   // Rotate into X with Menu Lines 
@@ -103,7 +103,7 @@
     font-size: 30px;
     padding: 1rem 0;
     font-weight: 400;
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
     &:hover {
