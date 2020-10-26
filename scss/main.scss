@@ -42,7 +42,7 @@ header {
 main {
   padding: 4rem;
   // height: 100%;
-  min-height: calc(100vh - 50px);
+  min-height: calc(100vh - 50px); // stick the footer fixed bottom 
   .icons {
     margin-top: 1rem;
     a {
@@ -110,6 +110,52 @@ main {
     border-radius: 2%;
     border-bottom: $secondary-color 5px solid;
   }
+}
+// Work/Projects
+.projects {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+    &:hover {
+      opacity: 0.7;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}
+#work .lg-heading {
+  font-size: 3rem;
+  text-align: center;
+  border-bottom: $secondary-color 2px solid;
+}
+#work .sm-heading {
+  font-size: 1.3rem;
+  text-align: center;
+}
+// Button Styles
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 2%;
+  margin-bottom: 0.3rem;
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color, 50);
+  color: #fff;
+}
+.btn-light {
+  @extend .btn;
+  background: lighten($primary-color, 50);
+  color: #222;
 }
 #main-footer {
   text-align: center;
