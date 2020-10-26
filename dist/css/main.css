@@ -212,6 +212,34 @@ main {
   font-size: 1.3rem;
   text-align: center; }
 
+#contact .lg-heading {
+  font-size: 3rem;
+  text-align: center;
+  border-bottom: #67babd 2px solid; }
+
+#contact .sm-heading {
+  font-size: 1.3rem;
+  text-align: center; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 1.5rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-top: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #67babd;
+      color: #000; }
+      .boxes div:hover span {
+        color: #000; }
+
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
