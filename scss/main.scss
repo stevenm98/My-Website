@@ -114,18 +114,27 @@ main {
 // Work/Projects
 .projects {
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
   img {
-    width: 100%;
+    width: 90%;
     border: 3px #fff solid;
     &:hover {
-      opacity: 0.7;
+      opacity: 0.9;
       border-color: $secondary-color;
       @include easeOut;
     }
   }
 }
+.description {
+  h1 {
+    color: $secondary-color;
+  }
+  p {
+    font-size: 1.0rem;
+  }
+}
+
 #work .lg-heading {
   font-size: 3rem;
   text-align: center;
@@ -169,7 +178,6 @@ main {
   }
 }
 
-
 // Button Styles
 .btn {
   display: block;
@@ -177,6 +185,8 @@ main {
   border: 0;
   border-radius: 2%;
   margin-bottom: 0.3rem;
+  text-align: center;
+  width: 90%;
   &:hover {
     background: $secondary-color;
     color: set-text-color($secondary-color);
